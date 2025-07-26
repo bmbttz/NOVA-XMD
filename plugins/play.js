@@ -70,7 +70,7 @@ cmd({
         if (!yt.results.length) return reply("No results found!");
 
         const song = yt.results[0];
-        const apiUrl = `https://apis.davidcyriltech.my.id/youtube/mp3?url=${encodeURIComponent(song.url)}`;
+        const apiUrl = `https://api.giftedtech.web.id/api/download/dlmp3?apikey=gifted_api_s9hs4dyf5&url=${encodeURIComponent(song.url)}`;
         
         // Fetch song data concurrently
         let [songRes] = await Promise.all([
